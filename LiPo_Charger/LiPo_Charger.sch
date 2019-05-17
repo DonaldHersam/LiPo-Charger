@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Battery_Management:BQ297xy U?
-U 1 1 5D0FA10E
-P 6400 3150
-F 0 "U?" H 6400 3517 50  0000 C CNN
-F 1 "BQ297xy" H 6400 3426 50  0000 C CNN
-F 2 "Package_SON:WSON-6_1.5x1.5mm_P0.5mm" H 6400 3500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/bq2970.pdf" H 6150 3350 50  0001 C CNN
-	1    6400 3150
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5D0FAABB
 P 4200 3550
@@ -170,7 +159,7 @@ F 3 "" H 3750 3700 50  0001 C CNN
 	1    3750 3700
 	1    0    0    -1  
 $EndComp
-Text GLabel 7150 2550 2    50   Output ~ 0
+Text GLabel 8600 2550 2    50   Output ~ 0
 Pack+
 Connection ~ 4450 2550
 Wire Wire Line
@@ -178,47 +167,26 @@ Wire Wire Line
 $Comp
 L Device:R_Small_US R?
 U 1 1 5D10C468
-P 5600 2800
-F 0 "R?" H 5668 2846 50  0000 L CNN
-F 1 "330" H 5668 2755 50  0000 L CNN
-F 2 "" H 5600 2800 50  0001 C CNN
-F 3 "~" H 5600 2800 50  0001 C CNN
-	1    5600 2800
+P 8200 3150
+F 0 "R?" H 8268 3196 50  0000 L CNN
+F 1 "330" H 8268 3105 50  0000 L CNN
+F 2 "" H 8200 3150 50  0001 C CNN
+F 3 "~" H 8200 3150 50  0001 C CNN
+	1    8200 3150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 2700 5600 2550
-Wire Wire Line
-	5600 3050 5600 2900
+	8200 3400 8200 3300
 $Comp
 L Device:C_Small C?
 U 1 1 5D10D572
-P 5600 3150
-F 0 "C?" H 5692 3196 50  0000 L CNN
-F 1 "0.1u" H 5692 3105 50  0000 L CNN
-F 2 "" H 5600 3150 50  0001 C CNN
-F 3 "~" H 5600 3150 50  0001 C CNN
-	1    5600 3150
+P 8200 3500
+F 0 "C?" H 8292 3546 50  0000 L CNN
+F 1 "0.1u" H 8292 3455 50  0000 L CNN
+F 2 "" H 8200 3500 50  0001 C CNN
+F 3 "~" H 8200 3500 50  0001 C CNN
+	1    8200 3500
 	1    0    0    -1  
-$EndComp
-Connection ~ 5600 3050
-Connection ~ 5600 2550
-Wire Wire Line
-	5600 2550 4450 2550
-Wire Wire Line
-	5600 2550 7150 2550
-Wire Wire Line
-	5600 3050 6000 3050
-$Comp
-L Device:Q_NMOS_DGS Q?
-U 1 1 5D1133F4
-P 6750 4050
-F 0 "Q?" H 6956 4096 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 6956 4005 50  0000 L CNN
-F 2 "" H 6950 4150 50  0001 C CNN
-F 3 "~" H 6750 4050 50  0001 C CNN
-	1    6750 4050
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:Q_NMOS_DGS Q?
@@ -232,56 +200,24 @@ F 3 "~" H 7500 4050 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	6800 3050 6900 3050
-Wire Wire Line
-	6900 3050 6900 3850
-Wire Wire Line
-	6900 3850 6750 3850
-Wire Wire Line
-	6800 3250 7500 3250
-Wire Wire Line
-	7500 3250 7500 3850
-Wire Wire Line
 	6950 4150 7300 4150
-Wire Wire Line
-	5600 3250 5600 3500
-Wire Wire Line
-	5600 3500 6400 3500
-Wire Wire Line
-	6400 3500 6400 3450
-Wire Wire Line
-	6400 3500 6400 4850
-Wire Wire Line
-	6400 4850 7700 4850
-Wire Wire Line
-	7700 4850 7700 4150
-Connection ~ 6400 3500
-Text GLabel 8600 4200 2    50   Output ~ 0
+Text GLabel 8600 4150 2    50   Output ~ 0
 Pack-
 Wire Wire Line
-	7700 4150 8500 4150
-Wire Wire Line
-	8500 4150 8500 4200
-Wire Wire Line
-	8500 4200 8600 4200
-Connection ~ 7700 4150
+	7700 4150 7750 4150
 $Comp
 L Device:R_Small_US R?
 U 1 1 5D11F2DF
 P 6000 3700
 F 0 "R?" H 6068 3746 50  0000 L CNN
-F 1 "R_Small_US" H 6068 3655 50  0000 L CNN
+F 1 "2.2k" H 6068 3655 50  0000 L CNN
 F 2 "" H 6000 3700 50  0001 C CNN
 F 3 "~" H 6000 3700 50  0001 C CNN
 	1    6000 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6000 3600 6000 3250
-Wire Wire Line
 	6000 3800 6250 3800
-Wire Wire Line
-	6550 3800 6550 4150
 $Comp
 L power:GND #PWR?
 U 1 1 5D122A95
@@ -293,7 +229,135 @@ F 3 "" H 6250 3800 50  0001 C CNN
 	1    6250 3800
 	1    0    0    -1  
 $EndComp
+$Comp
+L ChargeCircuit:bq297-edit U?
+U 1 1 5D1266EB
+P 7400 3200
+F 0 "U?" H 7400 3567 50  0000 C CNN
+F 1 "bq297-edit" H 7400 3476 50  0000 C CNN
+F 2 "" H 7400 3200 50  0001 C CNN
+F 3 "" H 7400 3200 50  0001 C CNN
+	1    7400 3200
+	1    0    0    -1  
+$EndComp
 Connection ~ 6250 3800
 Wire Wire Line
 	6250 3800 6550 3800
+Wire Wire Line
+	7000 3100 6750 3100
+Wire Wire Line
+	6550 3800 6550 4150
+Wire Wire Line
+	6750 3100 6750 3850
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5D12EC34
+P 6750 4050
+F 0 "Q?" H 6956 4096 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 6956 4005 50  0000 L CNN
+F 2 "" H 6950 4150 50  0001 C CNN
+F 3 "~" H 6750 4050 50  0001 C CNN
+	1    6750 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7500 3850 7000 3850
+Wire Wire Line
+	7000 3850 7000 3300
+Wire Wire Line
+	7400 3500 7750 3500
+Wire Wire Line
+	7750 3500 7750 4150
+Connection ~ 7750 4150
+Wire Wire Line
+	7750 4150 8200 4150
+Wire Wire Line
+	7800 3300 8200 3300
+Connection ~ 8200 3300
+Wire Wire Line
+	8200 3300 8200 3250
+Wire Wire Line
+	8200 3600 8200 4150
+Wire Wire Line
+	8200 4150 8600 4150
+Connection ~ 8200 4150
+Wire Wire Line
+	8200 2550 8200 3050
+Wire Wire Line
+	7800 3100 7800 2700
+Wire Wire Line
+	7800 2700 6000 2700
+Wire Wire Line
+	6000 2700 6000 3600
+$Comp
+L Transistor_BJT:2SD600 Q?
+U 1 1 5D136873
+P 9050 3050
+F 0 "Q?" V 9379 3050 50  0000 C CNN
+F 1 "2SD600" V 9288 3050 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 9250 2975 50  0001 L CIN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/sanyo/ds_pdf_e/2SB631.pdf" H 9050 3050 50  0001 L CNN
+	1    9050 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D137964
+P 9400 3100
+F 0 "#PWR?" H 9400 2850 50  0001 C CNN
+F 1 "GND" H 9405 2927 50  0000 C CNN
+F 2 "" H 9400 3100 50  0001 C CNN
+F 3 "" H 9400 3100 50  0001 C CNN
+	1    9400 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5D1381D2
+P 9050 3350
+F 0 "R?" H 9118 3396 50  0000 L CNN
+F 1 "10k" H 9118 3305 50  0000 L CNN
+F 2 "" H 9050 3350 50  0001 C CNN
+F 3 "~" H 9050 3350 50  0001 C CNN
+	1    9050 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 3100 9400 2950
+Wire Wire Line
+	9400 2950 9250 2950
+Text GLabel 9050 3750 1    50   Output ~ 0
+MCU
+Wire Wire Line
+	9050 3550 9050 3450
+Wire Wire Line
+	8200 2550 8500 2550
+$Comp
+L Device:R_Small_US R?
+U 1 1 5D13B08E
+P 8500 2800
+F 0 "R?" H 8568 2846 50  0000 L CNN
+F 1 "R_Power" H 8568 2755 50  0000 L CNN
+F 2 "" H 8500 2800 50  0001 C CNN
+F 3 "~" H 8500 2800 50  0001 C CNN
+	1    8500 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 2950 8500 2950
+Wire Wire Line
+	8500 2950 8500 2900
+Wire Wire Line
+	8500 2700 8500 2550
+Connection ~ 8500 2550
+Wire Wire Line
+	8500 2550 8600 2550
+Wire Wire Line
+	8200 2550 5250 2550
+Wire Wire Line
+	5250 2550 5250 3150
+Wire Wire Line
+	5250 3150 4850 3150
+Connection ~ 8200 2550
+Connection ~ 4850 3150
 $EndSCHEMATC

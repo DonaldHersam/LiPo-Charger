@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name bq297-edit)(type Legacy)(uri ${KIPRJMOD}/bq297-edit.lib)(options "")(descr ""))
+  (lib (name ChargeCircuit)(type Legacy)(uri ${KIPRJMOD}/ChargeCircuit.lib)(options "")(descr ""))
+)
